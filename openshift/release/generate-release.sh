@@ -17,7 +17,7 @@ else
 fi
 
 # the source parts
-resolve_resources config/source $source_output_file $image_prefix $tag
+resolve_resources config/source/single $source_output_file $image_prefix $tag
 
 # the channel parts
 resolve_resources config/channel/consolidated $channel_output_file $image_prefix $tag
