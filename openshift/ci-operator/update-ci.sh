@@ -37,7 +37,7 @@ test -d "$PERIODIC_CONFIGDIR" || fail "'$PERIODIC_CONFIGDIR' is not a directory"
 CONFIG=$CONFIGDIR/openshift-knative-eventing-kafka-release-$VERSION
 PERIODIC_CONFIG=$PERIODIC_CONFIGDIR/openshift-knative-eventing-kafka-release-$VERSION-periodics.yaml
 CURDIR=$(dirname $0)
-$CURDIR/generate-ci-config.sh knative-$VERSION 4.7 true > ${CONFIG}__47.yaml
+$CURDIR/generate-ci-config.sh knative-$VERSION 4.7 > ${CONFIG}__47.yaml
 
 # Switch to openshift/release to generate PROW files
 cd $OPENSHIFT
